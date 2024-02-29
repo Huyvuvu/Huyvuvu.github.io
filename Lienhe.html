@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="Lienhe.css">
+</head>
+<body>
+     <div id="menu">
+            <div class="item">
+                <a href="index.html">Trang chủ</a>
+            </div>
+            <div class="item">
+                <a href="Sanpham.html">Sản phẩm</a>
+                <ul>
+                    <li><a href="#">Món Chính</a>
+                        <ul>
+                            <li><a href="#">Đồ chay</a></li>
+                            <li><a href="#">Đồ mặn</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Món phụ</a>
+                        <ul>
+                            <li><a href="#">Tráng miệng</a></li>
+                            <li><a href="#">Đồ uống</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="item">
+                <a href="Thongtin.html">Thông tin</a>
+            </div>
+            <div class="item">
+                <a href="Lienhe.html">Liên hệ</a>
+            </div>
+        </div>
+    <div class="content-section">
+        <h2 class="section-heading">Liên hệ</h2>
+        <p class="section-sub-heading">Điền thông tin để liên hệ với chúng tôi <br>
+            mọi đóng góp sẽ được chúng tôi ghi nhận và phản hồi sớm nhất!
+        </p>
+
+        <div class="row contact-content">    
+             <div class="col col-haft contact-form">
+
+                <form action="process_form.php" method="post">
+                    <div class="row">
+                        <div class="col col-half">
+                            <label for="name">Họ và tên:</label>
+                            <input type="text" id="name" name="name" placeholder="Name" required class="form-control">
+                        </div>
+
+                        <div class="col col-half">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Mail" required class="form-control">
+                        </div>
+
+                         <div class="col col-half">
+                            <label for="phone">Phone:</label>
+                            <input type="text" id="phone" name="phone" placeholder="Phone number" required class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row mt-8">
+                        <div class="col col-half">
+                            <label for="message">Góp ý:</label>
+                            <input type="text" id="message" name="message" placeholder="Message" required class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row mt-8">
+                        <div class="col col-half">
+                            <input type="submit" value="gửi" class="btn-submit">
+                        </div>
+                    </div> 
+                </form>
+             </div>
+        </div>
+    </div>  
+</body>
+</html>
